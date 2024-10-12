@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Bakes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ 
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#">Velvet Bakes</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#special-edition">Special Edition</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ 
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Velvet Bakes</h1>
+      <p>Where Every Slice is a Love Story</p>
+      <a href="#special-edition" class="cta-button">Explore Special Editions</a>
+    </div>
+  </section>
+
+
+  <section class="special-edition" id="special-edition">
+    <h2>Special Edition Cakes</h2>
+    <div class="cakes-grid">
+      <div class="cake-card">
+        <div class="cake-image">
+          <img src="https://bkmedia.bakingo.com/choco-vanilla-cake0006chva-AAA.jpg?tr=w-320,h-320,dpr-1.5,q-70" alt="Navratri Cake">
+        </div>
+        <div class="cake-info">
+          <h3>Navratri Special</h3>
+          <p>&#8377 450</p>
+          <button class="add-to-cart" data-name="Navratri Special" data-price="450">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cake-card">
+        <div class="cake-image">
+          <img src="https://bkmedia.bakingo.com/dreamy-chocolate-cake-cake4053choc-b_0.jpg" alt="Birthday Cake">
+        </div>
+        <div class="cake-info">
+          <h3>Birthday Cake</h3>
+          <p>&#8377 560</p>
+          <button class="add-to-cart" data-name="Birthday Cake" data-price="560">Add to Cart</button>
+        </div>
+      </div>
+      <div class="cake-card">
+        <div class="cake-image">
+          <img src="https://bkmedia.bakingo.com/paw-patrol-adventure-birthday-cake-phot4001flav-a_0.jpg" alt="Photo Cake">
+        </div>
+        <div class="cake-info">
+          <h3>Photo Cake</h3>
+          <p>&#8377 659</p>
+          <button class="add-to-cart" data-name="Photo Cake" data-price="659">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gallery" id="gallery">
+    <h2 style="text-decoration-color: white;">Cake Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://bkmedia.bakingo.com/choco-truffle-cake0005choc-a.jpg" alt="Cake 1">
+      <img src="https://bkmedia.bakingo.com/butterscotch-cake0003butt-AAAA.jpg" alt="Cake 2">
+      <img src="https://bkmedia.bakingo.com/fresh-fruit-cake0014frui-AAA.jpg" alt="Cake 3">
+      <img src="https://bkmedia.bakingo.com/sq-snicker-chocolate-cake0028choc-AA.jpg" alt="Cake 4">
+    </div>
+  </section>
+  <section class="reviews" id="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review-container">
+      <p>"Fresh, delicious, and beautifully presented cakes. Absolutely loved it!" - Arjun</p>
+      <p>"The best cakes in the city! Great for every occasion." - Prateek</p>
+    </div>
+  </section>
+
+  
+  <section class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <div class="cart-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+      <div class="cart-summary">
+        <p>Total: <span id="cart-total">&#8377 0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="contact">
+    <div class="footer-container">
+      <p>Contact Us: info@velvetbakes.com | 987-654-3210</p>
+      <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
